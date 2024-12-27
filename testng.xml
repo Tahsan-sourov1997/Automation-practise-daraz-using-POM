@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Tahsan Hossain/IdeaProjects/WebPOM/src/test/java/testCases">
+        <classes>
+            <class name="testCases.TestHomePage">
+                <methods>
+                    <include name="testHomePage"/>
+                </methods>
+            </class>
+            <class name="testCases.TestLoginPage">
+                <methods>
+                    <include name="testLoginWithValidUsers"/>
+                    <include name="testLoginWithInvalidUsers"/>
+                    <include name="testLoginWithInvalidPhoneNumber"/>
+                    <exclude name="testLoginWithInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
